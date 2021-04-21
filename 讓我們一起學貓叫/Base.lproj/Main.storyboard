@@ -1,24 +1,264 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="讓我們一起學貓叫" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="PXq-Uw-Fhe">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="一起學貓叫" translatesAutoresizingMaskIntoConstraints="NO" id="EPS-Q2-KOU">
+                                <rect key="frame" x="30" y="89" width="350" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-V2-6Tu">
+                                <rect key="frame" x="41" y="526" width="346" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-Kn-Gcn">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="12-Rabbit"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaV-T9-Eab"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0H-95-a6M">
+                                        <rect key="frame" x="94" y="0.0" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="02-Chick"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfb-Et-Ws8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF3-nw-C06">
+                                        <rect key="frame" x="189" y="0.0" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="08-Bear"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9MF-ak-eCk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCM-Dr-bJR">
+                                        <rect key="frame" x="283" y="0.0" width="64" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="04-Elephant"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEr-KM-k4j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xv8-pf-IUw">
+                                        <rect key="frame" x="0.0" y="129" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="05-Cow"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKF-0y-isP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLg-HQ-EHh">
+                                        <rect key="frame" x="94" y="129" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="06-Lion"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMQ-dJ-0Io"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tV-cm-Fou">
+                                        <rect key="frame" x="189" y="129" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="07-Tiger"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyx-8x-ZF9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-ge-YIL">
+                                        <rect key="frame" x="283" y="130" width="65" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="03-Monkey"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gc2-c7-Bwo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUh-cN-9Dt">
+                                        <rect key="frame" x="0.0" y="258" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="09-Dog"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYc-vX-oPZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvu-FE-PjF">
+                                        <rect key="frame" x="94" y="258" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="10-Cat"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4T-wt-t70"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpc-Hy-VMX">
+                                        <rect key="frame" x="189" y="258" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="11-Pig"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kz7-c3-5GC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCJ-Lf-xWa">
+                                        <rect key="frame" x="283" y="259" width="64" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="01-Bird"/>
+                                        <connections>
+                                            <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ig-Lg-poD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATq-NH-RAM">
+                                <rect key="frame" x="39" y="281" width="350" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="yX6-Ql-yly">
+                                        <rect key="frame" x="82" y="28" width="142" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="minimumTrackTintColor" red="0.4392156862745098" green="0.54117647058823526" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="IUB-nr-Lqc"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dVV-XG-Ry2">
+                                        <rect key="frame" x="82" y="69" width="142" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="minimumTrackTintColor" red="0.4392156862745098" green="0.54117647058823526" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLs-wF-tAM">
+                                        <rect key="frame" x="226" y="32" width="40" height="13"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.54117647059999996" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvC-3d-r2G">
+                                        <rect key="frame" x="226" y="74" width="40" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.54117647059999996" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="音調" translatesAutoresizingMaskIntoConstraints="NO" id="9Dj-Kr-6uc">
+                                        <rect key="frame" x="18" y="20" width="56" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="速度" translatesAutoresizingMaskIntoConstraints="NO" id="kzN-nB-wRy">
+                                        <rect key="frame" x="18" y="67" width="56" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqE-CG-0lW">
+                                        <rect key="frame" x="266" y="28" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Play"/>
+                                        <connections>
+                                            <action selector="SpeakButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDA-Rc-hIF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="輸入文字後按下播放鍵" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KcY-EY-fdq">
+                                <rect key="frame" x="39" y="238" width="350" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.動物叫聲" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-r1-taW">
+                                <rect key="frame" x="41" y="468" width="138" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tXm-1g-x4r">
+                                <rect key="frame" x="211" y="467" width="178" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="中文"/>
+                                    <segment title="英文"/>
+                                    <segment title="叫聲"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.任意輸入文字" translatesAutoresizingMaskIntoConstraints="NO" id="KAd-KK-jY7">
+                                <rect key="frame" x="39" y="193" width="194" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="bearBtn" destination="XF3-nw-C06" id="Opp-aU-3SQ"/>
+                        <outlet property="birdBtn" destination="QCJ-Lf-xWa" id="WCu-cC-MiJ"/>
+                        <outlet property="catBtn" destination="vvu-FE-PjF" id="mtt-5f-Mpm"/>
+                        <outlet property="chickBtn" destination="d0H-95-a6M" id="hUS-X2-UMq"/>
+                        <outlet property="cowBtn" destination="xv8-pf-IUw" id="3hU-EA-ZcY"/>
+                        <outlet property="dogBtn" destination="CUh-cN-9Dt" id="Mnp-Lf-ytx"/>
+                        <outlet property="elephantBtn" destination="WCM-Dr-bJR" id="Vfg-Bb-Nnl"/>
+                        <outlet property="languageSegment" destination="tXm-1g-x4r" id="ZKn-RU-P2r"/>
+                        <outlet property="lionBtn" destination="CLg-HQ-EHh" id="uha-Ok-12o"/>
+                        <outlet property="monkeyBtn" destination="ZEz-ge-YIL" id="NTt-9v-VAs"/>
+                        <outlet property="pigBtn" destination="lpc-Hy-VMX" id="0gY-xb-KB7"/>
+                        <outlet property="rabbitBtn" destination="bpG-Kn-Gcn" id="xut-nq-KiT"/>
+                        <outlet property="sayTextField" destination="KcY-EY-fdq" id="Yax-jn-RyU"/>
+                        <outlet property="speakMultiplier" destination="yX6-Ql-yly" id="Bci-kv-w5E"/>
+                        <outlet property="speakMultiplierText" destination="DLs-wF-tAM" id="iXf-MR-Anh"/>
+                        <outlet property="speakRate" destination="dVV-XG-Ry2" id="RnB-Cz-PFK"/>
+                        <outlet property="speakRateText" destination="IvC-3d-r2G" id="XLr-Nd-jgf"/>
+                        <outlet property="talkButton" destination="VqE-CG-0lW" id="bHu-Dw-hlq"/>
+                        <outlet property="tigerBtn" destination="9tV-cm-Fou" id="AcL-kq-9qU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="19.626168224299064" y="93.952483801295898"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01-Bird" width="64" height="91"/>
+        <image name="02-Chick" width="64" height="91"/>
+        <image name="03-Monkey" width="65" height="91"/>
+        <image name="04-Elephant" width="64" height="91.333335876464844"/>
+        <image name="05-Cow" width="64" height="91"/>
+        <image name="06-Lion" width="64" height="91"/>
+        <image name="07-Tiger" width="64" height="91"/>
+        <image name="08-Bear" width="64" height="91"/>
+        <image name="09-Dog" width="64" height="91"/>
+        <image name="1.任意輸入文字" width="216" height="33"/>
+        <image name="10-Cat" width="64" height="91"/>
+        <image name="11-Pig" width="64" height="91"/>
+        <image name="12-Rabbit" width="64" height="91"/>
+        <image name="2.動物叫聲" width="157" height="32.666667938232422"/>
+        <image name="Background" width="428" height="926"/>
+        <image name="Play" width="80" height="80"/>
+        <image name="一起學貓叫" width="339" height="72"/>
+        <image name="速度" width="56" height="27"/>
+        <image name="音調" width="56.666667938232422" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
